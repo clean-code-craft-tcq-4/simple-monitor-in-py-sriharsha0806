@@ -27,5 +27,5 @@ class Charge_rate(BMS):
   def health(val):
     if val not in range(0.8):
        print("Charge is out of range")
-      return False
+       return False
     return True
