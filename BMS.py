@@ -6,7 +6,7 @@ class BMS:
   def health(val):
     pass
   
-class temperature(BMS):
+class Temperature(BMS):
   @staticmethod
   def health(val):
     if val not in range(46):
@@ -14,7 +14,7 @@ class temperature(BMS):
       return False
     return True
   
-class soc(BMS):
+class Soc(BMS):
   @staticmethod
   def health(val):
     if val not in range(20, 81):
@@ -22,7 +22,7 @@ class soc(BMS):
       return False
     return True
   
-class charge_rate(BMS):
+class Charge_rate(BMS):
   @staticmethod
   def health(val):
     if val not in range(0.8):
