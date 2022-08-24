@@ -16,5 +16,5 @@ class translate_language:
       'CHARGE_RATE_WARNING' : 'LADESTROM_WARNUNG',
       'CHARGE_RATE_ERROR' : 'LADESTROM_ERROR',
     }
-    return translate.get(str)
+    return translate.get(string)
 
