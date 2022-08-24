@@ -9,5 +9,5 @@ class translate_language:
       target_language_code=target_lang
     )
     for translation in response.translations:
-       return translation.translated_text)
+       return translation.translated_text
 
