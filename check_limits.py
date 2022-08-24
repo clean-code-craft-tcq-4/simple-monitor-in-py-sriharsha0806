@@ -2,12 +2,12 @@
 from BMS import Temperature, Soc, Charge_rate
 from translate_lan import translate_language
 class main:
-   @staticmethod
-    def formatter(string, lan="en"):
-      if lan == "de":
-        print(translate_language.translate(string, destination=lan))
-      else:
-        print(string)
+  @staticmethod
+  def formatter(string, lan="en"):
+    if lan == "de":
+      print(translate_language.translate(string, destination=lan))
+    else:
+      print(string)
  
   @staticmethod
   def battery_is_ok(temperature, soc, charge_rate, lan="en"):
@@ -22,14 +22,3 @@ class main:
     if all(features):
       return True
     return False
-  
-   
-        
-        
-      
-
-  
-  
-
-
-
