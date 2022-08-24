@@ -5,7 +5,7 @@ class main:
   @staticmethod
   def formatter(string, lan="en"):
     if lan == "de":
-      print(translate_language.translate(string, destination=lan))
+      print(translate_language.translation(string, destination=lan))
     else:
       print(string)
  
