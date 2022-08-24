@@ -6,7 +6,8 @@ class main:
     temp_bool = Temperature.health(temperature)
     soc_bool = Soc.health(soc)
     charge_bool = Charge_rate.health(charge_rate)
-    if temp_bool and soc_bool and charge_rate_bool:
+    features = [temp_bool, soc_bool, charge_rate_bool]
+    if not any(features):
       return True
     return False
 
