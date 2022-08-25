@@ -1,6 +1,10 @@
 # OCP
-from BMS import Temperature, Soc, Charge_rate
+from BMS.Temperature import Temperature
+from BMS.SOC import Soc
+from BMS.Charge_rate import Charge_rate
+
 from translate_lan import translate_language
+
 class main:
   @staticmethod
   def formatter(string, lan="en"):
