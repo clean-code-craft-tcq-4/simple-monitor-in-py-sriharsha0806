@@ -10,7 +10,7 @@ class Charge_rate(BMS):
   @classmethod
   def health(cls, val):
     for indicator in Charge_rate.indicators.keys():
-      if indicator[0] <= val and val <= indicator[1]:
+      if indicator[0] <= val <= indicator[1]:
         return Charge_rate.indicators[indicator]
   
 
